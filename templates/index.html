@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Farmolutions</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
+	
+		<script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/init.js') }}"></script>
+		
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/skel-noscript.css') }}" />
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+			<script>
+        						$("#siteloader").html('<object data="http://localhost:5000/list"/>');
+			</script>
+		
+	
+	</head>
+	<body>
+
+	
+			<section id="header">
+				<header>
+					<h1>Farmolutions</h1>
+					<p>By Satvik Jagannath, Akash Nidhi and Sharath R</p>
+					<p>Tech Culture, Better Agriculture</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly scrolly-centered">View the list of Farmers</a>
+					<a href="#first" class="button style2 scrolly scrolly-centered">Create a Farmer Record</a>
+				</footer>
+			</section>
+		
+	
+			<section id="banner">
+				<header>
+					<h2>Farmers Records</h2>
+				</header>
+				<p>Check out the latest updated list of farmers and the response to videos that they have watched.</p><br/>
+				<footer>
+
+						<div align="center"> 
+    <object type="text/html" data="http://protected-retreat-4762.herokuapp.com/list" width="1000px" height="800px">
+    </object></div>
+					<!--<a href="#first" class="button style2 scrolly">View the list</a>-->
+				</footer>
+			</section>
+		
+
+			<article id="first" class="container box style3">
+				<header>
+					<h2>Add a new Farmer Record</h2>
+					<p></p>
+				</header>
+				<form method="post" action="http://protected-retreat-4762.herokuapp.com/populate">
+					<div class="row half">
+						<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
+						<div class="6u"><input type="text" class="text" name="vilname" placeholder="Village Name" /></div>
+					</div>
+					<div class="row half">
+						<div class="6u"><input type="text" class="text" name="phno" placeholder="Phone Number" /></div>
+						<div class="6u"><input type="text" class="text" name="blockname" placeholder="Block Name" /></div>
+					</div>
+					<div class="row half">
+						<div class="12u">
+							<textarea name="videoID" placeholder="Video IDs"></textarea>
+						</div>
+					</div>
+
+										<div class="row half">
+						<div class="12u">
+
+							<textarea name="videoTitles" placeholder="Video Titles"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<ul class="actions">
+								<li>   <input type="submit" class="button form" value="Submit"></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</article>
+
+
+				    <header>
+						<h3>Table</h3>
+					</header>
+		
+
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="http://twitter.com/satvik_j" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+				<li><a href="http://facebook.com/satvikj" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+				<li><a href="http://in.linkedin.com/pub/satvik-jagannath/54/6ba/a65" class="fa fa-linkedin solo"><span>LinkedIn</span></a></li>
+			</ul>
+			<div class="copyright">
+				<ul class="menu">
+					<li>WebApp Developed by - <b>Satvik Jagannath</b>, <b>Akash Nidhi</b> and <b> Sharath R</b></li>
+				</ul>
+			</div>
+		</section>
+
+	</body>
+</html>

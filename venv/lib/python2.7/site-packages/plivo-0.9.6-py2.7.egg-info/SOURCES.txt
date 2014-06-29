@@ -1,0 +1,9 @@
+plivo.py
+plivoxml.py
+setup.cfg
+setup.py
+plivo.egg-info/PKG-INFO
+plivo.egg-info/SOURCES.txt
+plivo.egg-info/dependency_links.txt
+plivo.egg-info/requires.txt
+plivo.egg-info/top_level.txt

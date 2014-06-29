@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery.getJSON demo</title>
+<style>
+img {
+height: 100px;
+float: left;
+}
+</style>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="images"></div>
+<script>
+(function() {
+var flickerAPI = "http://192.168.151.58:5000/list";
+$.getJSON( flickerAPI, {
+format: "json"
+})
+.done(function( data ) {
+$.each( data.items, function( i, item ) {
+
+alert(data);
+});
+});
+})();
+</script>
+</body>
+</html>
