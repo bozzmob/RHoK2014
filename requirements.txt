@@ -8,5 +8,5 @@ argparse==1.2.1
 gunicorn==18.0
 itsdangerous==0.24
 plivo==0.9.6
-requests==2.2.1
+requests==2.20.0
 wsgiref==0.1.2
